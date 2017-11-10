@@ -110,7 +110,7 @@ a, a:active, a:visited, a:focus {
 #portfolio a {
 	display: block;
 	width: 13rem;
-	margin: 2rem auto 6rem;
+	margin: 2rem auto 2rem;
 	border-bottom: 1px solid transparent;
 }
 #portfolio a,
@@ -245,5 +245,13 @@ a, a:active, a:visited, a:focus {
 	}
 	.modal-btn {
 		float: right;
+	}
+}
+@media only screen and (max-width: 991px) {
+	#portfolio .col-md-4:last-child a {
+		margin-bottom: 2rem;
+	}
+	#portfolio a {
+		margin-bottom: 6rem;
 	}
 }
