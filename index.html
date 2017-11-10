@@ -35,7 +35,7 @@
                 <li>Разработка сайтов под ключ</li>
             </ul>
         </div>
-        <a href="#" class="main-down"><i class="icon-down"></i></a>
+        <a href="#portfolio" class="main-down"><i class="icon-down"></i></a>
     </div>
 </header>
 <main>
@@ -115,8 +115,20 @@
     	link.on('click', function ($e) {
 		    var work = $(this).data('work');
             modal.find('.modal-body').load(work + '.html');
-	    })
+	    });
     });
+</script>
+<script type="text/javascript">
+	$(function () {
+		$('.main-down').on('click', function ($e) {
+			$e.preventDefault();
+
+			var id = $(this).attr('href');
+			var top = $(id).offset().top;
+
+			$('html, body').animate({scrollTop: top}, 800);
+		});
+	});
 </script>
 </body>
 </html>
