@@ -79,6 +79,9 @@ a, a:active, a:visited, a:focus {
 	text-align: center;
 	transition: 0.2s;
 }
+.main-down:focus {
+	color: #FFF;
+}
 .main-down:hover,
 .main-down:active,
 .main-down:visited {
